@@ -46,7 +46,7 @@
       }
 
       .Reset {
-        background-color: #6495ED;
+        background: linear-gradient(to right, #FFA07A, #F08080);
         width: 100px ;
         height: 100px;
         position: relative;
