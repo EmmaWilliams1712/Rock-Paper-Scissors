@@ -4,30 +4,37 @@
   <head> 
     <title>Rock-Paper-Scissors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
   </head>
 
   <body>
+
+    <div class="stars">
 
     <h1>Rock Paper Scissors</h1>
 
     <p>Do you think you can beat the computer?!</p>
 
+
       <div class="button-container">
 
-        <button class="Rock" onclick="playRound('rock');">Rock</button>
+        <button class="Rock" onclick="playRound('rock');"> <img src="rock.png" alt="Rock Image"> Rock</button>
 
-        <button class="Paper" onclick="playRound('paper');">Paper</button>
+        <button class="Paper" onclick="playRound('paper');"> <img src="paper.png" alt="Paper Image">Paper</button>
 
-        <button class="Scissors" onclick="playRound('scissors');">Scissors</button>
+        <button class="Scissors" onclick="playRound('scissors');"> <img src="scissors.png" alt="Scissors Image"> Scissors</button>
 
         <button class="Reset" onclick="
           score.wins = 0;
           score.losses = 0;
           score.ties = 0;
           localStorage.removeItem('score');
-        ">Reset Score</button>
+        "> <img src="reset.png" alt="Reset Image"> Reset Score</button>
+
       </div>
+
+    </div>
 
   </body>
 
