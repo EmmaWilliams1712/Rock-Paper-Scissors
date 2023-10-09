@@ -1,20 +1,36 @@
 body {
-  background-color: black;
-  color: yellow;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color:#6699ff;
+  color: khaki;
 }
 
 h1 {
-  color: yellow;
+  color: #ffff33;
   text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: 'Salsa', cursive;
   font-size: 38px;
   font-weight: bold;
+  text-decoration: underline;
 }
 
-p {
-  color: yellow;
+.heading-text {
+  font-family: 'Finger Paint', cursive;
+  color: #333333;
+  font-size: 28px;
   text-align: center;
+  margin-top: 30px;
+}
+
+.start {
+  font-family: 'Finger Paint', cursive;
+  color: #ffff33;
+  font-size: 20px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
 }
 
 .move-icon {
@@ -30,28 +46,46 @@ p {
   border-radius: 50%;
 }
 
-button:hover {
+.move-button:hover {
   cursor:pointer;
   border-width: 10px;
-  border-color: orange;
+  border-color: #ffff33;
 }
 
 .result {
-  font-size: 25px;
+  font-family: 'Chewy', cursive;
+  font-size: 28px;
   font-weight: bold;
   margin-top: 50px;
+  text-align: center;
+}
+
+.moves {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 .score {
+  font-size: 24px;
   margin-top: 50px;
+  text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 .reset-button {
-  background-color: transparent;
-  color: yellow;
+  background-color: white;
+  border: black solid 3px;
+  color: black;
   font-size: 15px;
   padding: 8px 15px;
   cursor: pointer;
+}
+
+.reset-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
     
