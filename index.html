@@ -8,34 +8,34 @@
     <script src="index.js"></script>
   </head>
 
-  <body>
+    <body>
 
-    <div class="stars">
+        <h1>Rock Paper Scissors</h1>
 
-    <h1>Rock Paper Scissors</h1>
+        <p>Do you think you can beat the computer?!</p>
 
-    <p>Do you think you can beat the computer?!</p>
+        <p> Select Rock, Paper or Scissors to begin...</p>
 
 
-      <div class="button-container">
+        <button onclick="playRound('rock');" class="move-button"> <img src="rock-emoji.png" alt="Rock Emoji" class="move-icon"></button>
 
-        <button class="Rock" onclick="playRound('rock');"> <img src="rock.png" alt="Rock Image"> Rock</button>
+        <button onclick="playRound('paper');" class="move-button"> <img src="paper-emoji.png" alt="Paper Emoji" class="move-icon"></button>
 
-        <button class="Paper" onclick="playRound('paper');"> <img src="paper.png" alt="Paper Image">Paper</button>
+        <button onclick="playRound('scissors');" class="move-button"> <img src="scissors-emoji.png" alt="Scissors Emoji" class="move-icon"> </button>
 
-        <button class="Scissors" onclick="playRound('scissors');"> <img src="scissors.png" alt="Scissors Image"> Scissors</button>
+        
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+        <p class="js-score score"> Wins: 0, Losses: 0, Ties: 0 </p> 
 
-        <button class="Reset" onclick="
-          score.wins = 0;
-          score.losses = 0;
-          score.ties = 0;
-          localStorage.removeItem('score');
-        "> <img src="reset.png" alt="Reset Image"> Reset Score</button>
+        <button onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+        " class="reset-button"> Reset Score</button>
 
-      </div>
-
-    </div>
-
-  </body>
+    </body>
 
 </html>

@@ -4,6 +4,8 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     ties: 0 
   };
 
+  updateScoreElement();
+
   
 function playRound(playerSelection) {
   const computerSelection = getComputerChoice();
@@ -65,8 +67,21 @@ function playRound(playerSelection) {
 
     localStorage.setItem('score', JSON.stringify(score));
 
-  alert(`You picked ${playerSelection}. Computer picked ${computerSelection}.${result}
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+    updateScoreElement();
+
+    document.querySelector('.js-result').innerHTML = result;
+
+    document.querySelector('.js-moves').innerHTML = 
+    `You picked <img src="${playerSelection}-emoji.png" class="move-icon"> and Computer picked
+    <img src="${computerSelection}-emoji.png" class="move-icon">`;
+    
+
+}
+
+function updateScoreElement() {
+
+    document.querySelector('.js-score')
+        .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 
 }
 
